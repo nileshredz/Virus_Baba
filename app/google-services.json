@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "737792231185",
+    "firebase_url": "https://virus-baba-or.firebaseio.com",
+    "project_id": "virus-baba-or",
+    "storage_bucket": "virus-baba-or.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737792231185:android:24a88f1e23b202a0a42eb0",
+        "android_client_info": {
+          "package_name": "com.example.virusbaba_or"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737792231185-koi1uisba198id2gg6olf0bn51dht23n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.virusbaba_or",
+            "certificate_hash": "072d18981d006b4ce007806e4a1bdc8412115f77"
+          }
+        },
+        {
+          "client_id": "737792231185-i2piaoa5idag5oprq6s9ksdcd0oa8iva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMOI9naFRovDrgc20ltrf205JP9kJIYt4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737792231185-i2piaoa5idag5oprq6s9ksdcd0oa8iva.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

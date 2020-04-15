@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/offwhite_background_1"
+    tools:context=".questions">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Questionnaires:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.225" />
+
+    <ScrollView
+        android:layout_width="390dp"
+        android:layout_height="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.548">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/q1"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_q1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/y1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/y1"
+                    android:onClick="rg_q1"/>
+
+                <RadioButton
+                    android:id="@+id/n1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/n1"
+                    android:onClick="rg_q1"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/q2"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:text="Q3. What are Symptoms you are Experiencing?."
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/c1_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:onClick="checkSelection"
+                android:text="High Fever" />
+
+            <CheckBox
+                android:id="@+id/c1_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:onClick="checkSelection"
+                android:text="Dry Cough" />
+
+            <CheckBox
+                android:id="@+id/c1_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:onClick="checkSelection"
+                android:text="Mild Breathing Issue"/>
+
+            <CheckBox
+                android:id="@+id/c1_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:onClick="checkSelection"
+                android:text="Severe Breathin Issue"/>
+
+            <CheckBox
+                android:id="@+id/c1_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:onClick="checkSelection"
+                android:text="Diarrhea"/>
+
+            <CheckBox
+                android:id="@+id/c1_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="checkSelection"
+                android:text="Fatigue"/>
+
+            <CheckBox
+                android:id="@+id/c1_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="checkSelection"
+                android:text="None"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:text="Q4. Do You Smoke?"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_q4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+
+                    android:id="@+id/y2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat"
+                    android:onClick="rg_q4"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/n2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat"
+                    android:text="No"
+                    android:onClick="rg_q4"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:text="Q5. Any Medical Conditions?"/>
+
+            <CheckBox
+                android:id="@+id/c2_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:onClick="checkSelection"
+                android:text="Heart Problem"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/c2_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:text="Blood Pressure."
+                android:onClick="checkSelection"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/c2_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:text="Diabetes."
+                android:onClick="checkSelection"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/c2_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:text="Bone Issue"
+                android:onClick="checkSelection"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/c2_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:text="None"
+                android:onClick="checkSelection"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:text="Q6. How many Members in you Family?."/>
+
+
+            <RadioGroup
+                android:id="@+id/rg_q6"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/r_none"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat"
+                    android:text="None"
+                    android:onClick="rg_q6"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/r_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat"
+                    android:text="1"
+
+                    android:onClick="rg_q6"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/r_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat"
+                    android:text="2"
+                    android:onClick="rg_q6"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/r_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat"
+                    android:text="3"
+                    android:onClick="rg_q6"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/r_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat"
+                    android:text="4"
+                    android:onClick="rg_q6"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/r_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat"
+                    android:text="4+"
+                    android:onClick="rg_q6"
+                    android:textColor="#000000" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="#000000"
+                android:text="Q7. Have you met a Doctor Recently? "/>
+
+            <RadioGroup
+                android:id="@+id/rg_q7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/y3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat"
+                    android:onClick="rg_q7"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/n3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat"
+                    android:onClick="rg_q7"
+                    android:text="No" />
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_testm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <Button
+        android:id="@+id/bt_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+</androidx.constraintlayout.widget.ConstraintLayout>
